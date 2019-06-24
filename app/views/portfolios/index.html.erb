@@ -8,4 +8,5 @@
   <p><%=port_item.body %></p>
   <p><%=image_tag port_item.thumb_image unless port_item.thumb_image.nil?%></p>
   <%= link_to "Edit", edit_portfolio_path(port_item.id) %>
+  <%= link_to "Show", portfolio_path(port_item.id) %>
 <%end%>
