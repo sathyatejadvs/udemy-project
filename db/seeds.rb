@@ -5,3 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |blog|
+	Blog.create!(
+		title: "my blog post #{blog}" ,
+		body: "Something went wrong!"
+	)
+end
+puts "10 blog posts created"
+
+7.times do |skills_item|
+	Skill.create!(
+		title: "Rails #{skills_item}" ,
+		percent_utilized: 45
+	)
+end
+puts "7 skills_item aare created"
+
+9.times do |portfolio_item|
+Portfolio.create!(
+	title: "portfolio title #{portfolio_item}",
+	subtitle: "Title for portfolio ",
+	body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+	main_image: "http://placehold.it/600x400" ,
+	thumb_image: "http://placehold.it/350x150"
+
+	)
+end
+puts "9 portfolio items created"
