@@ -1,5 +1,7 @@
 class Portfolio < ApplicationRecord
 	has_many :technologies
+	accepts_nested_attributes_for :technologies,
+																 reject_if: lambda { |attrs| attrs['name'].blank?}
 	include Placeholder
 	validates_presence_of :title, :body, :main_image, :thumb_image
 
@@ -7,7 +9,7 @@ class Portfolio < ApplicationRecord
 	# 	where(subtitle: 'Rails guide')
 	# end
 
-		scope :angular, -> { where(subtitle: 'Rails guide') }
+		scope :angular, -> { where(subtitle: 'Angular') }
 
 		after_initialize :set_defaults 
 
