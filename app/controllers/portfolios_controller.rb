@@ -1,9 +1,13 @@
 class PortfoliosController < ApplicationController
 	def index
-		@portfolio_items = Portfolio.all 
+		@portfolio_items = Portfolio.all
 	end
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
 	def new
 		@portfolio_item = Portfolio.new
+    3.times { @portfolio_item.technologies.build }
 	end
 	def create
     @portfolio_item = Portfolio.new(port_params)
@@ -44,6 +48,6 @@ class PortfoliosController < ApplicationController
   end
 
   def port_params
-      params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, :id)
+      params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, :id, technologies_attributes: [:name])
     end
 end
