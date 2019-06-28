@@ -7,4 +7,6 @@ class ApplicationController < ActionController::Base
 
 	include CurrentUserConcern
 
+	include ApplicationTitleConcern
+
 end
