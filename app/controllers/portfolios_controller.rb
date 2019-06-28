@@ -47,7 +47,18 @@ class PortfoliosController < ApplicationController
   	end
   end
 
+  private
+
   def port_params
-      params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, :id, technologies_attributes: [:name])
+      params.require(:portfolio).permit( :title,
+                                         :subtitle, 
+                                         :body, 
+                                         :main_image, 
+                                         :thumb_image,
+                                         :first_name,
+                                         :last_name, 
+                                         :id, 
+                                         technologies_attributes: [:name]
+                                        )
     end
 end
