@@ -13,7 +13,7 @@
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
-       <%= render 'layouts/shared/nav' %>
+       <%= render 'layouts/shared/nav', location: 'top' %>
        <%= yield %>
 
        <% if current_user.is_a?(User) %>
