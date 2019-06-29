@@ -15,7 +15,8 @@
 
        <%= render 'layouts/shared/nav' , location: 'left'%>
        <%= credentials_validation %>
-
        <%= yield %>
+
+       <%= source_helper('blog') %>
   </body>
 </html>
