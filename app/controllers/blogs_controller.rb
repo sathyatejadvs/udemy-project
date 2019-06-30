@@ -1,11 +1,11 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update, :destroy,:toggle_status]
+  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout 'blog'
 
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.special_blog
     @title = "Blog Page | My Blog Website"
   end
 
@@ -29,7 +29,6 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
-
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
@@ -78,6 +77,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params 
-      params.require(:blog).permit(:title, :body)                   
+      params.require(:blog).permit(topic_attributes: [:title, :body, :id])                   
     end
 end
