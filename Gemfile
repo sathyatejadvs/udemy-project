@@ -30,6 +30,9 @@ gem "friendly_id"
 
 #use for authentication
 gem 'devise'
+
+#for UI
+gem 'bootstrap', '~> 4.0.0.alpha6'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
