@@ -9,7 +9,6 @@ class Blog < ApplicationRecord
 	belongs_to :topic
 
 	def self.special_blog
-
-		limit(2)
+		all
 	end
 end
