@@ -15,16 +15,21 @@
   </head>
 
   <body>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+      <div class="site-wrapper">
 
-       <%= render 'layouts/shared/nav' , location: 'top'%>
-      
-       <%= credentials_validation %>
+        <div class="site-wrapper-inner">
 
-       <%= yield %>
+          <div class="cover-container">
 
-       <%= source_helper("application") %>
+            <%= render 'layouts/shared/application_nav'%>
+    
+            <%= credentials_validation %>
 
+            <%= yield %>
+
+            <%= source_helper("application") %>
+          </div>
+        </div>
+      </div>
   </body>
 </html>

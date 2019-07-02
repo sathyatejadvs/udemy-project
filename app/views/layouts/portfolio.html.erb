@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= @title %></title>
-    <meta name ='keywords' content="<%= @seo_keywords %>"/>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title><%= @title %></title>
+  <meta name ='keywords' content="<%= @seo_keywords %>"/>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+<body>
+ <div class="site-wrapper">
 
-       <%= render 'layouts/shared/nav', location: 'top' %>
-       <%= credentials_validation %>
-       <%= yield %>
+  <div class="site-wrapper-inner">
 
-       <%= source_helper("portfolio") %>
-  </body>
+    <div class="cover-container">
+      <%= render 'layouts/shared/application_nav'%>
+      <%= credentials_validation %>
+      <%= yield %>
+
+      <%= source_helper("portfolio") %>
+    </div>
+  </div>
+</div>
+
+
+</body>
 </html>
