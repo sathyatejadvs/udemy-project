@@ -56,7 +56,7 @@ margin-left: auto;
 
 /* Padding for spacing */
 .inner {
-padding: 2rem;
+padding: 1rem;
 }
 
 
@@ -65,7 +65,7 @@ padding: 2rem;
 */
 
 .masthead {
-margin-bottom: 2rem;
+margin-bottom: 1rem;
 
 }
 
@@ -150,7 +150,7 @@ vertical-align: middle;
 .masthead,
 .mastfoot,
 .cover-container {
-width: 100%; /* Must be percentage or pixels for horizontal alignment */
+width: 80%; /* Must be percentage or pixels for horizontal alignment */
 }
 }
 
@@ -166,10 +166,13 @@ width: 42rem;
 * Globals
 */
 .card-block {
-background-color: white;
+background-color: #fff;
 color: black;
-width: 30rem;
+width: 45rem;
 height: 10 rem;
+text-align: center;
+padding: 1rem!important;
+
 
 }
 
@@ -184,3 +187,9 @@ color: black;
 /*
 * link to back
 */
+.auth-links {
+color: black;
+}
+
+
+
