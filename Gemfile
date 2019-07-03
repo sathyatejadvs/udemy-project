@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "friendly_id"
+#for UI
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 #use for authentication
 gem 'devise'
