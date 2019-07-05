@@ -1,22 +1,5 @@
+  
 <div class="col-sm-8 blog-main">
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Body</th>
-        <th>Date</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <br>
-      <%= render @blogs %>
-    </tbody>
-  </table>
-       <%= link_to 'Write a New Blog', new_blog_path, class: 'btn btn-primary btn-blog-new' %>
-  <nav class="blog-pagination">
-
-  </nav>
-
+    <%= render @blogs %>
 </div>
+
