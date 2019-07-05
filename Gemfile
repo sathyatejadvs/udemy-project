@@ -33,6 +33,9 @@ gem 'bootstrap', '~> 4.3.1'
 
 #use for authentication
 gem 'devise'
+
+#Font awesone for Icons
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

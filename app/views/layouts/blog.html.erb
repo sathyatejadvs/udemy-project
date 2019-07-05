@@ -18,29 +18,21 @@
     <%= render 'layouts/shared/application_nav' %>
 
     <!-- start of blog header -->
-    <div class="blog-header">
-      <div class="container">
-        <h1 class="blog-title">My Blog</h1>
-        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
-      </div>
-    </div>
+    <br>
+    <%= render 'layouts/shared/blog_header' %>
     <!-- end of blog header -->
 
     <div class="container">
-
       <div class="row">
 
         <%= yield %>
 
         <%= render 'layouts/shared/blog_sidebar' %>
+
       </div>
 
         <!-- start of footer -->
-        <footer class="blog-footer">
-          <%= render 'layouts/shared/application_footer'%>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
+        <%= render 'layouts/shared/blog_footer' %>
         <!-- end of footer -->
 
         <%= source_helper("blog") %>

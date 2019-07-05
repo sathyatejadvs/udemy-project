@@ -1,4 +1,5 @@
 @import 'bootstrap';
+@import 'font-awesome';
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -129,9 +130,6 @@ border-top: .05rem solid #e5e5e5;
 margin-bottom: 0;
 }
 
-/*
-* Footer
-*/
 .btn-blog-new {
 margin-left: 250px;
 margin-bottom: -176px;
@@ -139,4 +137,19 @@ margin-bottom: -176px;
 
 .form-back {
 margin-left: 563px;
+}
+
+/*
+* Side bar link tags
+*/
+.sidebar li {
+font-size: 2rem;
+}
+
+.sidebar-module .sidebar-module-inset {
+padding: 4rem;
+}
+
+.inner .justify-content-center {
+	background-color: lavender;
 }
