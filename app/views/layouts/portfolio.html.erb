@@ -13,11 +13,13 @@
   </head>
 
   <body>
-    <%= render 'layouts/shared/application_nav', location: 'top'%>
+    <%= render 'layouts/shared/portfolio_nav' %>
     <%= render 'layouts/shared/portfolio_masthead' %>
+    <%= render 'layouts/shared/application_nav', location: 'top'%>
     <%= source_helper("portfolio") %>
     <%= yield %>
     <%= render 'layouts/shared/portfolio_footer' %>
   </body>
+  
 </html>
 
