@@ -1,7 +1,8 @@
   
 <div class="col-sm-8 blog-main">
-    <%= render @blogs %>
-    <%= link_to 'Back To Top', blogs_path, class: 'form-back btn btn-primary'  
- %>
+	<%= render @blogs %>
+	<%= paginate  @blogs  %>
+	<%= link_to 'Back To Top', blogs_path, class: 'form-back btn btn-primary'  
+	%>
 </div>
 

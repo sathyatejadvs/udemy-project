@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= @title %></title>
-  <meta name ='keywords' content="<%= @seo_keywords %>"/>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
-</head>
+    <meta name="keywords" content="<%= @seo_keywords %>" />
 
-<body>
- <div class="site-wrapper">
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-  <div class="site-wrapper-inner">
-
-    <div class="cover-container">
-      <%= render 'layouts/shared/application_nav'%>
-      
-      <%= credentials_validation 'nav' %>
-      
-      <%= yield %>
-
-      <%= render 'layouts/shared/application_footer'%>
-
-      <%= source_helper("portfolio") %>
-    </div>
-  </div>
-</div>
-
-
-</body>
+  <body>
+    <%= render 'layouts/shared/application_nav', location: 'top'%>
+    <%= render 'layouts/shared/portfolio_masthead' %>
+    <%= source_helper("portfolio") %>
+    <%= yield %>
+    <%= render 'layouts/shared/portfolio_footer' %>
+  </body>
 </html>
+
