@@ -9,6 +9,10 @@ class Portfolio < ApplicationRecord
 	# 	where(subtitle: 'Rails guide')
 	# end
 
+	def self.by_position
+		order("position ASC")
+	end
+
 		scope :angular, -> { where(subtitle: 'Angular') }
 
 		after_initialize :set_defaults 
