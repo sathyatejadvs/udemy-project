@@ -2,6 +2,12 @@
 
 $(document).ready(function() {
 
-  $("#sortables").sortable();
+  $("#sortables").sortable({
+  	update: function() {
+  		Rails.ajax({
+  			url: $(this).sortable("serialize"),
+  		});
+  	}
+  });
   
 });
