@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 <div class="card" data-url="<%= port_item.id %>">
-=======
-
-<div class="card" id= 'sortable_<%=port_item.id %>'>
->>>>>>> image-management
   <%=image_tag port_item.thumb_image unless port_item.thumb_image.nil?%>
   <p class="card-text">
     <span><%= link_to port_item.title, portfolio_show_path(port_item) %></span> <%= port_item.subtitle %>
