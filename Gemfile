@@ -42,6 +42,10 @@ gem 'kaminari', '~>1.0', '>= 1.0.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.4'
 # Use ActiveStorage variant
 
 # Use Capistrano for deployment
