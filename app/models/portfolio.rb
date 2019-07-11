@@ -7,6 +7,7 @@ class Portfolio < ApplicationRecord
 
 	mount_uploader :thumb_image, PortfolioUploader
 	mount_uploader :main_image, PortfolioUploader
+	
 	# def self.angular
 	# 	where(subtitle: 'Rails guide')
 	# end
