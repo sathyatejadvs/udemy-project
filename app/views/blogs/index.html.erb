@@ -4,5 +4,7 @@
 	<%= paginate  @blogs  %>
 	<%= link_to 'Go Top', blogs_path, class: 'form-back btn btn-primary'  
 	%>
+
+	<%= link_to "Delete article", @article, remote: true, method: :delete %>
 </div>
 
