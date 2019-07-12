@@ -20,8 +20,14 @@
       <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
       <% end %>
+
       <%= link_to 'Back', portfolios_path %>
-      <%= link_to "Delete", @portfolio_item.destroy, method: :delete, data:{confirm: "Wanna Delete?"}%>
+      <%= link_to "Delete", @portfolio_item.destroy, method: :delete, data:{confirm: "Want to Delete?"}%>
+
+      <% if current_user %>
+        <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %>
+      <% end %>
+    
     </div>
   </div>
 </div>
