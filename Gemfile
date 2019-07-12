@@ -28,24 +28,29 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem "friendly_id"
 
-#for UI
+# for UI
 gem 'bootstrap', '~> 4.3.1'
 
-#use for authentication
+# use for authentication
 gem 'devise'
 
-#Font awesone for Icons
+# Font awesone for Icons
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'kaminari', '~>1.0', '>= 1.0.1'
 
-#jquery
+# jquery
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
+# Used to upload the files explicitly
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.8'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.4'
+
+# Use to handle nested forms
+gem "cocoon"
+
 # Use ActiveStorage variant
 
 # Use Capistrano for deployment
