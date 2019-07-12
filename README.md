@@ -13,10 +13,16 @@
 
 > Devise for authentication
 
-> Used Friendly id
+> Friendly id
 
-> Bootstrap
-- Bootstrap version 4.3.1
-- Styles for user authentication pages and sampled image shown below
-- Google Map link
-- Well styled naviagation bars
+- Bootstrap
+	> Bootstrap version 4.3.1
+ 		- Styles for user authentication pages and sampled image shown below
+ 		- Google Map link
+ 		- Well styled naviagation bars
+
+## Gems been used
+
+- font-awesome-rails
+- jquery-rails
+- carrierwave
