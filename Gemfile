@@ -51,6 +51,9 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.4'
 # Use to handle nested forms
 gem "cocoon"
 
+# notifications to application depends on jquery
+gem "gritter", "1.2.0"
+
 # Use ActiveStorage variant
 
 # Use Capistrano for deployment

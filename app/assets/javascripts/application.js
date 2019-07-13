@@ -14,8 +14,10 @@
 //= require jquery-ui
 //= require html.sortable
 //= require cocoon
+//= require gritter
 //= require activestorage
 //= require turbolinks
 
 //= require drag_n_drop
+
 
