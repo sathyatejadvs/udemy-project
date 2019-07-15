@@ -22,8 +22,11 @@
       <% end %>
 
       <%= link_to 'Back', portfolios_path %>
-      <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %>
 
+      <% if current_user.is_a?(User)%>
+        <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %>
+      <% end %>
+    
     </div>
   </div>
 </div>
